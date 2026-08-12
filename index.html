@@ -1,0 +1,1460 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Eirini & Talha - Two Shores, One Story"
+    >
+
+    <title>Eirini & Talha | Two Shores, One Story ❤️</title>
+
+    <!-- Google Fonts -->
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- CSS -->
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+</head>
+
+<body>
+
+    <!-- ==========================================
+         CUSTOM CURSOR
+    =========================================== -->
+
+    <div
+        class="cursor-dot"
+        id="cursorDot"
+    ></div>
+
+
+    <!-- ==========================================
+         PROGRESS BAR
+    =========================================== -->
+
+    <div
+        class="progress-bar"
+        id="progressBar"
+    ></div>
+
+
+    <!-- ==========================================
+         MUSIC BUTTON
+    =========================================== -->
+
+    <button
+        class="music-button"
+        id="musicButton"
+        aria-label="Play music"
+        title="Play music"
+    >
+        ♫
+    </button>
+
+
+    <!-- ==========================================
+         BACKGROUND MUSIC
+    =========================================== -->
+
+    <audio
+        id="backgroundMusic"
+        loop
+        preload="auto"
+    >
+
+        <source
+            src="music/song.mp3"
+            type="audio/mpeg"
+        >
+
+    </audio>
+
+
+    <!-- ==========================================
+         HERO
+    =========================================== -->
+
+    <section
+        class="section hero"
+        id="home"
+    >
+
+        <div
+            class="stars"
+            id="heroStars"
+        ></div>
+
+        <div class="hero-glow glow-one"></div>
+
+        <div class="hero-glow glow-two"></div>
+
+
+        <!-- TURKEY -->
+
+        <div class="country country-left reveal">
+
+            <span class="flag">
+                🇹🇷
+            </span>
+
+            <span class="country-name">
+                TURKEY
+            </span>
+
+        </div>
+
+
+        <!-- GREECE -->
+
+        <div class="country country-right reveal">
+
+            <span class="flag">
+                🇬🇷
+            </span>
+
+            <span class="country-name">
+                GREECE
+            </span>
+
+        </div>
+
+
+        <div class="hero-content">
+
+            <p class="eyebrow reveal">
+                SOME STORIES BEGIN WHEN YOU LEAST EXPECT THEM
+            </p>
+
+
+            <h1 class="hero-title reveal">
+
+                <span>
+                    Two Shores,
+                </span>
+
+                <span class="gold-text">
+                    One Story.
+                </span>
+
+            </h1>
+
+
+            <p class="hero-subtitle reveal">
+
+                <strong class="hero-names">
+                    Eirini & Talha
+                </strong>
+
+                <br><br>
+
+                Two different countries.
+
+                <br>
+
+                Two different languages.
+
+                <br>
+
+                Somehow, our paths crossed.
+
+                <br><br>
+
+                <span class="hero-date">
+                    OUR STORY • 10 MAY 2026
+                </span>
+
+            </p>
+
+
+            <div class="hero-heart-wrapper reveal">
+
+                <div class="hero-line"></div>
+
+                <div class="hero-heart">
+                    ♡
+                </div>
+
+                <div class="hero-line"></div>
+
+            </div>
+
+
+            <button
+                class="main-button reveal"
+                id="startButton"
+            >
+
+                Our Story
+
+                <span>
+                    ↓
+                </span>
+
+            </button>
+
+        </div>
+
+
+        <div class="scroll-indicator">
+
+            <span>
+                SCROLL
+            </span>
+
+
+            <div class="mouse">
+
+                <div class="mouse-wheel"></div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ==========================================
+         MESSAGE
+    =========================================== -->
+
+    <section
+        class="section chat-section"
+        id="message"
+    >
+
+        <div class="section-container small-container">
+
+
+            <div class="section-heading reveal">
+
+                <span class="section-number">
+                    01
+                </span>
+
+
+                <p class="eyebrow">
+                    I WANTED TO TELL YOU SOMETHING
+                </p>
+
+
+                <h2>
+                    Hey...
+                </h2>
+
+            </div>
+
+
+            <div
+                class="chat-window reveal"
+                id="chatWindow"
+            >
+
+
+                <div class="chat-header">
+
+                    <div class="chat-avatar">
+                        ♡
+                    </div>
+
+
+                    <div>
+
+                        <strong>
+                            For Eirini ♡
+                        </strong>
+
+                        <span>
+                            from Talha
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="chat-body">
+
+
+                    <div
+                        class="chat-message outgoing hidden-chat"
+                        data-delay="300"
+                    >
+                        Hey Babe...
+                    </div>
+
+
+                    <div
+                        class="chat-message outgoing hidden-chat"
+                        data-delay="1400"
+                    >
+                        I made something for you.
+                    </div>
+
+
+                    <div
+                        class="chat-message incoming hidden-chat"
+                        data-delay="2500"
+                    >
+                        For me?
+                    </div>
+
+
+                    <div
+                        class="chat-message outgoing hidden-chat"
+                        data-delay="3500"
+                    >
+                        Yeah.
+                    </div>
+
+
+                    <div
+                        class="chat-message outgoing hidden-chat"
+                        data-delay="4500"
+                    >
+                        I just wanted to remind you of something.
+                    </div>
+
+
+                    <div
+                        class="chat-message incoming hidden-chat"
+                        data-delay="5700"
+                    >
+                        What?
+                    </div>
+
+
+                    <div
+                        class="chat-message outgoing hidden-chat"
+                        data-delay="6800"
+                    >
+                        You look so beautiful when you smile. ❤️
+                    </div>
+
+
+                    <div
+                        class="typing hidden-chat"
+                        data-delay="8000"
+                    >
+
+                        <span></span>
+                        <span></span>
+                        <span></span>
+
+                    </div>
+
+
+                    <div
+                        class="chat-message outgoing hidden-chat final-chat-message"
+                        data-delay="9500"
+                    >
+                        So... I thought I'd try to make you smile today.
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ==========================================
+         OUR STORY
+    =========================================== -->
+
+    <section
+        class="section story-section"
+        id="story"
+    >
+
+        <div class="section-container">
+
+
+            <div class="section-heading center reveal">
+
+                <span class="section-number">
+                    02
+                </span>
+
+
+                <p class="eyebrow">
+                    SOME MOMENTS STAY
+                </p>
+
+
+                <h2>
+                    Our Story
+                </h2>
+
+
+                <p>
+                    It started with two people,
+                    two countries and a simple hello.
+                    Then came May 10, 2026.
+                </p>
+
+            </div>
+
+
+            <div class="timeline">
+
+
+                <div class="timeline-line"></div>
+
+
+                <!-- CHAPTER 01 -->
+
+                <article
+                    class="timeline-item timeline-left reveal"
+                >
+
+                    <div class="timeline-dot">
+                        ✦
+                    </div>
+
+
+                    <div class="timeline-card">
+
+                        <span class="timeline-date">
+                            CHAPTER 01
+                        </span>
+
+
+                        <h3>
+                            How It Started
+                        </h3>
+
+
+                        <p>
+                            It started simply.
+                            Two people from two different countries
+                            getting to know each other,
+                            one conversation at a time.
+                            Neither of us knew where it would lead.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <!-- CHAPTER 02 -->
+
+                <article
+                    class="timeline-item timeline-right reveal"
+                >
+
+                    <div class="timeline-dot">
+                        ♡
+                    </div>
+
+
+                    <div class="timeline-card">
+
+                        <span class="timeline-date">
+                            CHAPTER 02
+                        </span>
+
+
+                        <h3>
+                            Somewhere Between Hello & Everything Else
+                        </h3>
+
+
+                        <p>
+                            Somewhere between our conversations,
+                            random messages, little jokes and laughter,
+                            something changed.
+                            You were no longer just someone I had met.
+                            You became someone I looked forward
+                            to talking to.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <!-- 10 MAY 2026 -->
+
+                <article
+                    class="timeline-item timeline-left reveal"
+                >
+
+                    <div class="timeline-dot">
+                        ♥
+                    </div>
+
+
+                    <div class="timeline-card special-date-card">
+
+                        <span class="timeline-date">
+                            10 MAY 2026
+                        </span>
+
+
+                        <h3>
+                            The Day We Became Us
+                        </h3>
+
+
+                        <p>
+                            May 10, 2026.
+                            The day something that started
+                            with simple conversations
+                            became something more.
+                            The day there was no longer
+                            just Eirini and Talha.
+                            There was us.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <!-- YOUR SMILE -->
+
+                <article
+                    class="timeline-item timeline-right reveal"
+                >
+
+                    <div class="timeline-dot">
+                        ☺
+                    </div>
+
+
+                    <div class="timeline-card">
+
+                        <span class="timeline-date">
+                            AFTER MAY 10
+                        </span>
+
+
+                        <h3>
+                            Your Smile
+                        </h3>
+
+
+                        <p>
+                            There are many things I remember, but your smile has always been one of my favourites. Somehow, seeing you smile make an ordinary moment feel special.
+
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <!-- LITTLE THINGS -->
+
+                <article
+                    class="timeline-item timeline-left reveal"
+                >
+
+                    <div class="timeline-dot">
+                        ★
+                    </div>
+
+
+                    <div class="timeline-card">
+
+                        <span class="timeline-date">
+                            THE DAYS BETWEEN
+                        </span>
+
+
+                        <h3>
+                            The Little Things
+                        </h3>
+
+
+                        <p>
+                            The conversations.
+                            The jokes.
+                            The random messages.
+                            The moments that probably meant nothing
+                            to anyone else.
+                            Somehow, those little things
+                            became some of the things
+                            I remember most.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <!-- TODAY -->
+
+                <article
+                    class="timeline-item timeline-right reveal"
+                >
+
+                    <div class="timeline-dot">
+                        ♡
+                    </div>
+
+
+                    <div class="timeline-card">
+
+                        <span class="timeline-date">
+                            TODAY
+                        </span>
+
+
+                        <h3>
+                            A Story Worth Remembering
+                        </h3>
+
+
+                        <p>
+                            Not every story goes exactly
+                            the way we imagine it will.
+                            But that doesn't make
+                            the beautiful moments any less real.
+                            Whatever happens next,
+                            I'm grateful for the part of my story
+                            that has your name in it.
+                        </p>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ==========================================
+         MEMORIES
+    =========================================== -->
+
+    <section
+        class="section memories-section"
+        id="memories"
+    >
+
+        <div class="section-container">
+
+
+            <div class="section-heading center reveal">
+
+                <span class="section-number">
+                    03
+                </span>
+
+
+                <p class="eyebrow">
+                    LITTLE MOMENTS
+                </p>
+
+
+                <h2>
+                    Memories
+                </h2>
+
+
+                <p>
+                    Some pictures are more than pictures.
+                </p>
+
+            </div>
+
+
+            <div class="polaroid-grid">
+
+
+                <article
+                    class="polaroid rotate-left reveal"
+                    data-caption="A moment I still remember."
+                >
+
+                    <img
+                        src="images/photo1.jpg"
+                        alt="Memory 1"
+                    >
+
+                    <p>
+                        that day ♡
+                    </p>
+
+                </article>
+
+
+                <article
+                    class="polaroid rotate-right reveal"
+                    data-caption="One of those moments that made everything feel simple."
+                >
+
+                    <img
+                        src="images/photo2.jpg"
+                        alt="Memory 2"
+                    >
+
+                    <p>
+                        your smile
+                    </p>
+
+                </article>
+
+
+                <article
+                    class="polaroid rotate-left-small reveal"
+                    data-caption="Sometimes the smallest moments become the best memories."
+                >
+
+                    <img
+                        src="images/photo3.jpg"
+                        alt="Memory 3"
+                    >
+
+                    <p>
+                        us
+                    </p>
+
+                </article>
+
+
+                <article
+                    class="polaroid rotate-right-small reveal"
+                    data-caption="I didn't know I would remember this moment for so long."
+                >
+
+                    <img
+                        src="images/photo4.jpg"
+                        alt="Memory 4"
+                    >
+
+                    <p>
+                        little things
+                    </p>
+
+                </article>
+
+
+                <article
+                    class="polaroid rotate-left reveal"
+                    data-caption="Some memories quietly become favourites."
+                >
+
+                    <img
+                        src="images/photo5.jpg"
+                        alt="Memory 5"
+                    >
+
+                    <p>
+                        favourite
+                    </p>
+
+                </article>
+
+
+                <article
+                    class="polaroid rotate-right reveal"
+                    data-caption="And somehow, this one still makes me smile."
+                >
+
+                    <img
+                        src="images/photo6.jpg"
+                        alt="Memory 6"
+                    >
+
+                    <p>
+                        always remember
+                    </p>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ==========================================
+         OPEN WHEN
+    =========================================== -->
+
+    <section
+        class="section open-section"
+        id="open-when"
+    >
+
+        <div class="section-container">
+
+
+            <div class="section-heading center reveal">
+
+                <span class="section-number">
+                    04
+                </span>
+
+
+                <p class="eyebrow">
+                    FOUR LITTLE LETTERS
+                </p>
+
+
+                <h2>
+                    Open When...
+                </h2>
+
+
+                <p>
+                    Pick whichever one you need.
+                </p>
+
+            </div>
+
+
+            <div class="letters-grid">
+
+
+                <button
+                    class="letter-card reveal"
+                    data-title="When you're having a bad day"
+                    data-icon="☁"
+                    data-message="If today wasn't your day, I hope this little page can steal at least one smile from you. Tomorrow deserves another chance."
+                >
+
+                    <span class="letter-icon">
+                        ☁
+                    </span>
+
+
+                    <h3>
+                        You're having a bad day
+                    </h3>
+
+
+                    <span class="letter-open">
+                        OPEN →
+                    </span>
+
+                </button>
+
+
+                <button
+                    class="letter-card reveal"
+                    data-title="When you can't sleep"
+                    data-icon="☾"
+                    data-message="If it's late and your mind won't stop thinking, remember that somewhere under this same sky there is someone wishing you a peaceful night."
+                >
+
+                    <span class="letter-icon">
+                        ☾
+                    </span>
+
+
+                    <h3>
+                        You can't sleep
+                    </h3>
+
+
+                    <span class="letter-open">
+                        OPEN →
+                    </span>
+
+                </button>
+
+
+                <button
+                    class="letter-card reveal"
+                    data-title="When you need a reason to smile"
+                    data-icon="☺"
+                    data-message="This is your reminder that your smile looks so beautiful on you. So yes, this is me requesting one."
+                >
+
+                    <span class="letter-icon">
+                        ☺
+                    </span>
+
+
+                    <h3>
+                        You need a reason to smile
+                    </h3>
+
+
+                    <span class="letter-open">
+                        OPEN →
+                    </span>
+
+                </button>
+
+
+                <button
+                    class="letter-card reveal"
+                    data-title="When you wonder if I care"
+                    data-icon="♡"
+                    data-message="Things may be different now, but that doesn't erase the fact that you matter to me. Some feelings never change even the distance change."
+                >
+
+                    <span class="letter-icon">
+                        ♡
+                    </span>
+
+
+                    <h3>
+                        You wonder if I care
+                    </h3>
+
+
+                    <span class="letter-open">
+                        OPEN →
+                    </span>
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ==========================================
+         LANGUAGE
+    =========================================== -->
+
+    <section
+        class="section language-section"
+        id="languages"
+    >
+
+        <div class="section-container small-container">
+
+
+            <div class="section-heading center reveal">
+
+                <span class="section-number">
+                    05
+                </span>
+
+
+                <div class="flags-title">
+
+                    🇹🇷
+
+                    <span>
+                        ×
+                    </span>
+
+                    🇬🇷
+
+                </div>
+
+
+                <p class="eyebrow">
+                    TWO LANGUAGES
+                </p>
+
+
+                <h2>
+                    One Feeling
+                </h2>
+
+            </div>
+
+
+            <div class="language-table reveal">
+
+
+                <div class="language-header">
+
+                    <span>
+                        TÜRKÇE
+                    </span>
+
+                    <span>
+                        ΕΛΛΗΝΙΚΑ
+                    </span>
+
+                </div>
+
+
+                <div class="language-row">
+
+                    <span>
+                        Merhaba
+                    </span>
+
+                    <span>
+                        Γεια σου
+                    </span>
+
+                </div>
+
+
+                <div class="language-row">
+
+                    <span>
+                        Gülüşün
+                    </span>
+
+                    <span>
+                        Το χαμόγελό σου
+                    </span>
+
+                </div>
+
+
+                <div class="language-row">
+
+                    <span>
+                        Seni özledim
+                    </span>
+
+                    <span>
+                        Μου λείπεις
+                    </span>
+
+                </div>
+
+
+                <div class="language-row">
+
+                    <span>
+                        Güzelim
+                    </span>
+
+                    <span>
+                        Όμορφή μου
+                    </span>
+
+                </div>
+
+
+                <div class="language-row special-row">
+
+                    <span>
+                        Seni seviyorum
+                    </span>
+
+                    <span>
+                        Σ' αγαπώ
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="favorite-word reveal">
+
+                <span>
+                    MY FAVOURITE GREEK NAME
+                </span>
+
+                <h3>
+                    EIRINI
+                </h3>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ==========================================
+         SAME SKY
+    =========================================== -->
+
+    <section
+        class="section sky-section"
+        id="sky"
+    >
+
+        <canvas
+            id="starCanvas"
+        ></canvas>
+
+
+        <div class="sky-content">
+
+
+            <div class="section-heading center reveal">
+
+                <span class="section-number light-number">
+                    06
+                </span>
+
+
+                <p class="eyebrow">
+                    NO MATTER THE DISTANCE
+                </p>
+
+
+                <h2>
+                    Under The Same Sky
+                </h2>
+
+            </div>
+
+
+            <div class="countries-connection reveal">
+
+
+                <div class="sky-country">
+
+                    <span class="sky-flag">
+                        🇹🇷
+                    </span>
+
+                    <span>
+                        TALHA
+                    </span>
+
+                </div>
+
+
+                <div class="connection">
+
+                    <div class="connection-line">
+
+                        <div class="moving-light"></div>
+
+                    </div>
+
+
+                    <div class="connection-heart">
+                        ♡
+                    </div>
+
+                </div>
+
+
+                <div class="sky-country">
+
+                    <span class="sky-flag">
+                        🇬🇷
+                    </span>
+
+                    <span>
+                        EIRINI
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="sky-message reveal">
+
+                <p>
+                    Maybe we're not in the same place right now.
+                </p>
+
+
+                <strong>
+                    But tonight, we're still under the same sky.
+                </strong>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ==========================================
+         QUESTION
+    =========================================== -->
+
+    <section
+        class="section question-section"
+        id="question"
+    >
+
+        <div class="section-container small-container">
+
+
+            <div class="question-box reveal">
+
+
+                <span class="question-small">
+                    ONE SMALL QUESTION
+                </span>
+
+
+                <h2>
+                    Did I make you smile?
+                </h2>
+
+
+                <div class="question-buttons">
+
+
+                    <button
+                        class="answer-button yes-button"
+                        id="yesButton"
+                    >
+                        YES ♡
+                    </button>
+
+
+                    <button
+                        class="answer-button maybe-button"
+                        id="maybeButton"
+                    >
+                        MAYBE :)
+                    </button>
+
+                </div>
+
+
+                <div
+                    class="answer-message"
+                    id="answerMessage"
+                ></div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ==========================================
+         ENDING
+    =========================================== -->
+
+    <section
+        class="section ending-section"
+        id="ending"
+    >
+
+        <div
+            class="ending-stars"
+            id="endingStars"
+        ></div>
+
+
+        <div class="ending-content">
+
+
+            <p class="ending-small reveal">
+                ONE LAST THING, EIRINI
+            </p>
+
+
+            <h2 class="reveal">
+
+                You Look So Beautiful
+
+                <br>
+
+                When You Smile.
+
+            </h2>
+
+
+            <div class="ending-divider reveal"></div>
+
+
+            <p class="ending-message reveal">
+
+                No pressure.
+
+                <br>
+
+                No expectations.
+
+                <br><br>
+
+                I just wanted
+
+                <br>
+
+                to make you smile.
+
+            </p>
+
+
+            <div class="ending-heart reveal">
+                ♡
+            </div>
+
+
+            <div class="ending-countries reveal">
+
+                <span>
+                    🇹🇷
+                </span>
+
+                <span class="ending-line"></span>
+
+                <span>
+                    ♡
+                </span>
+
+                <span class="ending-line"></span>
+
+                <span>
+                    🇬🇷
+                </span>
+
+            </div>
+
+
+            <p class="ending-signature reveal">
+
+                From Talha, in Turkey
+
+                <br>
+
+                to Eirini, in Greece.
+
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ==========================================
+         LETTER MODAL
+    =========================================== -->
+
+    <div
+        class="modal"
+        id="letterModal"
+    >
+
+        <div
+            class="modal-overlay"
+            id="modalOverlay"
+        ></div>
+
+
+        <div class="modal-content">
+
+
+            <button
+                class="modal-close"
+                id="modalClose"
+                aria-label="Close"
+            >
+                ×
+            </button>
+
+
+            <span
+                class="modal-icon"
+                id="modalIcon"
+            >
+                ♡
+            </span>
+
+
+            <h3
+                id="modalTitle"
+            >
+                Open When
+            </h3>
+
+
+            <p
+                id="modalMessage"
+            ></p>
+
+
+            <div class="modal-heart">
+                ♡
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ==========================================
+         PHOTO MODAL
+    =========================================== -->
+
+    <div
+        class="photo-modal"
+        id="photoModal"
+    >
+
+        <div
+            class="photo-modal-overlay"
+            id="photoModalOverlay"
+        ></div>
+
+
+        <div class="photo-modal-content">
+
+
+            <button
+                class="photo-modal-close"
+                id="photoModalClose"
+                aria-label="Close"
+            >
+                ×
+            </button>
+
+
+            <img
+                id="photoModalImage"
+                src=""
+                alt="Memory"
+            >
+
+
+            <p
+                id="photoModalCaption"
+            ></p>
+
+        </div>
+
+    </div>
+
+
+    <!-- ==========================================
+         FLOATING HEARTS
+    =========================================== -->
+
+    <div
+        class="heart-container"
+        id="heartContainer"
+    ></div>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
