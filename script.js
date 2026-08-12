@@ -1296,23 +1296,129 @@ polaroids.forEach(
 
 
 /* =========================================================
+   AUTO START MUSIC
+========================================================= */
+
+async function startBackgroundMusic() {
+
+    if (musicPlaying) {
+        return true;
+    }
+
+    try {
+
+        backgroundMusic.volume = 0;
+
+        await backgroundMusic.play();
+
+        musicPlaying = true;
+
+        fadeMusicIn();
+
+        musicButton.textContent = "❚❚";
+        musicButton.title = "Pause music";
+        musicButton.setAttribute("aria-label", "Pause music");
+        musicButton.classList.add("playing");
+
+        return true;
+
+    }
+    catch (error) {
+
+        console.log(
+            "Browser blocked audible autoplay. Music will start on the first user interaction.",
+            error
+        );
+
+        return false;
+    }
+}
+
+
+function enableMusicOnFirstInteraction() {
+
+    const eventNames = [
+        "pointerdown",
+        "touchstart",
+        "keydown",
+        "click"
+    ];
+
+
+    const startOnInteraction = async function (event) {
+
+        /*
+            Müzik butonuna basılmışsa mevcut buton kodu yönetsin.
+            Böylece aynı tıklama müziği açıp hemen kapatmaz.
+        */
+        if (
+            event.target &&
+            event.target.closest &&
+            event.target.closest("#musicButton")
+        ) {
+            return;
+        }
+
+
+        const started =
+            await startBackgroundMusic();
+
+
+        if (started) {
+
+            eventNames.forEach(
+                function (eventName) {
+
+                    document.removeEventListener(
+                        eventName,
+                        startOnInteraction,
+                        true
+                    );
+
+                }
+            );
+        }
+    };
+
+
+    eventNames.forEach(
+        function (eventName) {
+
+            document.addEventListener(
+                eventName,
+                startOnInteraction,
+                true
+            );
+
+        }
+    );
+}
+
+
+/* =========================================================
    INITIAL LOAD
 ========================================================= */
 
 window.addEventListener(
     "load",
-    function () {
+    async function () {
 
         updateProgress();
 
 
         /*
-            Müziği hazırla.
-            Site açılır açılmaz ses çıkmaz.
+            Önce sayfa açılır açılmaz müziği başlatmayı dener.
+            Tarayıcı sesli autoplay'i engellerse ilk kullanıcı
+            etkileşiminde otomatik olarak başlatır.
         */
 
-        backgroundMusic.volume =
-            0;
+        const started =
+            await startBackgroundMusic();
+
+
+        if (!started) {
+            enableMusicOnFirstInteraction();
+        }
 
 
         setTimeout(
